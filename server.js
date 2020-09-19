@@ -2,7 +2,7 @@
 var express = require("express");
 var fs = require("fs");
 var app = express();
-var PORT = 8080;
+var PORT = process.env.PORT||8080;
 var path = require("path");
 // var mainDir = path.join(__dirname, "/public");
 app.use(express.static("public"));
